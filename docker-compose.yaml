@@ -12,11 +12,16 @@ services:
     container_name: pgadmin
     ports:
       - 9090:80
+
+  api:
+    image: springboot-task-tracker-postgres-docker
+    ports:
+      - "8080-8085:8080"
           
 volumes: 
-  springboot-task-tracker-postgres-api-db-volume:
-  springboot-task-tracker-postgres-api-pgadmin-volume:
+  springboot-task-tracker-postgres-docker-db-volume:
+  springboot-task-tracker-postgres-docker-pgadmin-volume:
 
 networks:
   default:
-    name: springboot-task-tracker-postgres-api-network
+    name: springboot-task-tracker-postgres-docker-network

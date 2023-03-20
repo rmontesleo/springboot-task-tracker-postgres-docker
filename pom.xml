@@ -84,7 +84,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>springboot-task-tracker-postgres-api</finalName>
+		<finalName>springboot-task-tracker-postgres-docker</finalName>
 	</build>
 
 </project>
